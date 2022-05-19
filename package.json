@@ -7,7 +7,8 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^5",
-    "express": "^4"
+    "express": "^4",
+    "passport": "^0.5.3"
   },
   "devDependencies": {
     "sqlite3": "^5.0.2"
@@ -46,8 +47,8 @@
         "kind": "odata",
         "model": "srv\\external\\NorthWind",
         "credentials": {
-					"url": "https://services.odata.org/Experimental/OData/OData.svc"
-				}
+          "destination": "NorthWind"
+        }
       }
     }
   }
